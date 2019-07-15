@@ -1,0 +1,278 @@
+@charset "utf-8";
+/* css variables */
+:root {
+    --primary-color: #0081cc;
+    --primary-color-dark: #005e99;
+    --grey: #819298;
+    --grey-light: #f9f9f9;
+    --grey-blue: #ECEFF1;
+    --grey-darker: #283d48;
+    --color-hover: #005e99;
+    --color-focus: #004e7f;
+    --color-active: #003d66;
+    --color-visited: #003d66;
+    --leading: 1.7;
+    --vr: 1.7rem;
+    --vr-x2: 3.4rem;
+   }
+/* A tiny Reset */
+
+body,figure{
+    
+    margin: 0;
+}
+/* Base and Type styles */
+
+html{
+    font-size: 100%;
+line-height: 1.7;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #283d48;
+    background-color: #fff;
+
+}
+h1,h2,h3{
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+img {
+max-width: 700px;
+height: auto;
+}
+
+/* layout style*/
+.site-wrapper{
+    max-width: 1300px;
+    margin: 0 auto 0 auto;
+    
+}
+.site-header{
+    background-color:  #0081cc;
+    display: flex;
+    align-items: center;
+
+}
+.header-logo{
+color: #fff;
+}
+.navbar{
+    display: flex;
+    margin-left: auto;
+}
+.navbar a.active,
+.navbar a:hover{
+    background-color: #005e99;
+
+}
+.navbar a:active{background-color: #005e99;}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    padding: 1.7em;
+    
+
+}
+
+/* hero style*/
+.hero{
+    background-color: #e6ecee;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-portfolio,.hero-blog {
+    height: 40vh;
+    
+}
+
+.portfolio-title{
+    font-size: 3.0rem;
+ 
+}
+.blog-title{
+    font-size: 3.0rem;
+    padding-left: 9rem;
+
+}
+
+/* profile style*/
+.profile{
+    display: flex;
+    max-width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+.profile-img{
+    margin-right: 1.7rem;
+    border-radius: 50%;
+
+}
+.profile-details{
+width:50%
+}
+.profile-title{
+    font-size: 3.4rem
+}
+.profile p{
+    font-size: 1.7rem
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    border: 1px solid #0081cc;
+    border-radius: 5px;
+}
+.btn--link{
+    text-decoration: none;
+}
+.btn-primary{
+    background-color: #0081cc;
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #005e99;
+}
+
+/* content style */
+.content{
+    display: flex;
+    background-color: #f9f9f9;
+    padding: 3.4rem
+}
+.primary-content{
+    flex-basis: 60%;
+    margin-right: 3.4rem;
+
+}
+.secondary-content{
+    flex-basis: 40%;
+   
+}
+
+.btn-secondary:hover{
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #005e99;
+    color: #fff;
+}
+.btn:active{
+    background-color: #003d66;
+    color: #fff;
+}
+.btn:focus{
+    background-color: #004e7f;
+    color: #fff;
+}
+.friends{
+    display: inline-block;
+    text-decoration: none;
+    padding: .5rem;
+}
+.friends a{
+    display: block;
+    text-decoration: none;
+    padding: .5rem;
+    color: #819298;
+}
+
+.friends a:hover{
+    color: #005e99;
+    text-decoration: underline;
+}
+/* footer style */
+.site-footer{
+    background-color:#0081cc;
+    color: #fff;
+}
+.site-footer a{
+    color: #fff;
+}
+
+.primary-footer{
+    display: flex;
+    padding: 3.4rem 
+}
+
+.contact,.site-map,.social{
+flex-basis: 33.3333%;
+outline: 2px;
+}
+.footer-nav{
+
+}
+.footer-nav a{
+    display: block;
+}
+
+.nav-social{
+display: flex;
+}
+.nav-social a{
+height: 32px;
+width: 32px;
+margin-right: 0.5rem;
+border:1px solid #f9f9f9;
+border-radius: 5px;
+padding: 0.5rem;
+}
+.nav-social a:hover{
+    border-color: #819298;
+}
+
+.secondary-footer{
+    background-color:#005e99;
+    display: flex;
+    padding: 1.7rem 3.4rem;
+}
+
+.copy{
+    margin-right: auto;
+}
+form{
+    border: 2px solid black;
+padding: 16px;
+
+
+}
+form div{
+    margin-bottom: 16px;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+input,
+select,
+textarea{
+border: 1px solid #ccc;
+padding: 8px 5px;
+display: block;
+width: 100%;
+background-color: #fff;
+border-radius: 10px
+
+}
+
+input[type="submit"]{
+    width: auto;
+
+}
+.btn00{
+    padding: 16px 48px;
+    background-color:#12242e;
+    cursor: pointer;
+}
+.btn00:hover{
+    background-color: #0081cc
+}
+
